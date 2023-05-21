@@ -9,6 +9,14 @@ const colors = {
     "hightlight-2": "#333333"
 }
 
-const theme = extendTheme({ colors });
+const breakpoints = {
+  sm: '392px',
+  md: '862px',
+  lg: '960px',
+  xl: '1200px',
+  '2xl': '1536px',
+}
+
+const theme = extendTheme({ colors, breakpoints });
 
 export default theme;

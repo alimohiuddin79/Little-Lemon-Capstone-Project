@@ -3,8 +3,8 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 // eslint-disable-next-line react/prop-types
 const SpecialCard = ({ title, price, description, src }) => {
   return (
-    <Box maxWidth={"258px"}>
-      <Image src={src} alt="greek-salad" />
+    <Box minWidth={"232px"} maxWidth={["244px", "360px", "258px"]}>
+      <Image width={'100%'} src={src} alt="greek-salad" />
       <Box
         display={"flex"}
         flexDirection={"column"}
@@ -37,7 +37,6 @@ const SpecialCard = ({ title, price, description, src }) => {
           fontSize={"1em"}
           fontWeight={"normal"}
           color={"primary-1"}
-          noOfLines={[1, 2, 3, 4, 5]}
         >
           {description}
         </Text>

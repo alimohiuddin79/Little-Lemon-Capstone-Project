@@ -5,11 +5,13 @@ const Testimonials = () => {
   return (
     <Flex width={"100%"} justifyContent={"center"} bg={"primary-1"}>
       <Flex
+      flexWrap={'wrap'}
         flexDirection={"column"}
         maxWidth={"844px"}
         width={"100%"}
         paddingY={"6em"}
-        rowGap={"3em"}
+        paddingX={['1.2em', '4em', 0]}
+        gap={"3em"}
       >
         <Heading
           as={"h2"}
@@ -17,11 +19,10 @@ const Testimonials = () => {
           fontWeight={"normal"}
           color={"primary-2"}
           textAlign={"center"}
-          noOfLines={1}
         >
           Testimonials
         </Heading>
-        <Flex columnGap={"1em"}>
+        <Flex gap={"1em"} flexWrap={'wrap'} justifyContent={'center'}>
             <TestimonialCard name={'Emily'} src={"/images/testimonial1.png"}/>
             <TestimonialCard name={'Mark'} src={"/images/testimonial2.png"}/>
             <TestimonialCard name={'Sarah'} src={"/images/testimonial3.png"}/>
