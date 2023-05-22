@@ -40,7 +40,7 @@ const Specials = () => {
               bg: "white",
             }}
           >
-            Online Menu
+            Menu
           </Button>
         </Flex>
 

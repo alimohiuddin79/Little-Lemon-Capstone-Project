@@ -7,6 +7,7 @@ const Layout = ({ children }) => {
             <Box
                 width={'100%'}
                 minHeight={'100vh'}
+                height={'100%'}
                 bg={'white'}
                 display={'flex'}
                 flexDirection={'column'}

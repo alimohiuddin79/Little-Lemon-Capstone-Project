@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   IconButton,
+  Image,
   Link,
   ListItem,
   UnorderedList,
@@ -68,10 +69,10 @@ const SideNav = ({ display, setDisplay }) => {
           </Link>
         </ListItem>
         <ListItem>
-          <Link fontSize={18} fontWeight={"medium"} color={"highlight-2"}>
-            Login
-          </Link>
-        </ListItem>
+            <Link fontSize={18} fontWeight={"medium"} color={"primary-1"}>
+              <Image src="/images/Cart.svg"/>
+            </Link>
+          </ListItem>
       </UnorderedList>
     </Box>
   );
